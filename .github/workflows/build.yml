@@ -47,11 +47,11 @@ jobs:
           build-tools: '30.0.3'
           ndk: '21.4.7075529'
 
-      # Install Buildozer
-      - name: Install Buildozer
+      # Install Python dependencies
+      - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install buildozer
+          pip install cython buildozer
 
       # Build the APK with Buildozer
       - name: Build with Buildozer
